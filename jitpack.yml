@@ -6,6 +6,9 @@ install:
    - sh install.sh > ~/.m2/repository/$groupdir/$ARTIFACT/$VERSION/pom.xml
    - sh install.sh > ./pom.xml
    - find . 
+   - find ~/.m2
+   - env
+   
 
    
 
