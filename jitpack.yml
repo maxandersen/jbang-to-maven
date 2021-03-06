@@ -1,0 +1,5 @@
+install:
+   - echo "Running a jbang command"
+   - mkdir -p ~/.m2/repository/jbang/is/awesome
+   -  curl -Ls https://sh.jbang.dev | bash -s - export -O ~/.m2/repository/jbang/is/awesome/hello.jar hello.java
+
