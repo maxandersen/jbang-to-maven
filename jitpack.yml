@@ -3,7 +3,8 @@ install:
    - mkdir -p ~/.m2/repository/$GROUP/$ARTIFACT/$VERSION/
    - curl -Ls https://sh.jbang.dev | bash -s - export -O ~/.m2/repository/$GROUP/$ARTIFACT/$VERSION/$ARTIFACT.jar hello.java
    - sh install.sh > ~/.m2/repository/$GROUP/$ARTIFACT/$VERSION/pom.xml
-   - cat ~/.m2/repository/$GROUP/$ARTIFACT/$VERSION/pom.xml
-   
+   - sh install.sh > ./pom.xml
+   - find . 
+
    
 
