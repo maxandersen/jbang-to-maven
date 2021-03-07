@@ -1,4 +1,4 @@
 install:
-  - ./jbang --fresh export --mavenpublish -O target hello.java
-  - ./jbang --fresh export --mavenpublish  hello.java
+  - ./jbang --fresh export --mavenpublish -O target -Dgroup=$GROUP -Dartifact=$ARTIFACT -Dversion=$VERSION hello.java
+  - ./jbang --fresh export --mavenpublish  -Dgroup=$GROUP -Dartifact=$ARTIFACT -Dversion=$VERSION hello.java
 
