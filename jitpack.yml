@@ -1,6 +1,6 @@
 install:
   - mkdir target
-  - ./jbang --fresh export --mavenpublish -O target -Dgroup=$GROUP -Dartifact=$ARTIFACT -Dversion=$VERSION hello.java
+  - ./jbang export --mavenpublish -O target -Dgroup=$GROUP -Dartifact=$ARTIFACT -Dversion=$VERSION hello.java
   - mkdir -p ~/.m2/repository
   - cp -rv target/* ~/.m2/repository/
 
