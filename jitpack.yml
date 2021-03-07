@@ -1,6 +1,4 @@
 install:
-  - sh help.sh
-
-
-   
+  - jbang --fresh export --mavenpublish -O target hello.java
+  - jbang --fresh export --mavenpublish  hello.java
 
